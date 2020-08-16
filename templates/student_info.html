@@ -21,7 +21,15 @@
             height: 2em;
             position: relative;
             left:705px;
-            top: 40px;        }
+            top: 40px;
+        }
+        .home{
+            width:610px;
+            height: 2em;
+            position: relative;
+            left:340px;
+            top: 40px;
+        }
     </style>
 
 </head>
@@ -41,7 +49,7 @@
 {#学生信息展示#}
 <div class="item">
 <table class="table table-bordered">
-    <caption>home</caption>
+    <caption>搜索结果:</caption>
     <thead>
         <tr>
         <th>id</th>
@@ -50,15 +58,12 @@
         <th>Python</th>
         <th>C</th>
         <th>总成绩</th>
-        <th>操作&nbsp;&nbsp;<a class="btn btn-info btn-xs" href="{{url_for ('addSrudent')}}" role="button"> ➕ </a></th>
+        <th>操作</th>
         </tr>
     </thead>
-
     <tbody>
-
         {% for student in students %}
             <tr class="active">
-
                 <td>{{ student.id }}&nbsp;&nbsp;&nbsp;</td>
                 <td>{{ student.name }}</td>
                 <td>{{ student.English }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
@@ -66,9 +71,9 @@
                 <td>{{ student.C }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
                 <td>{{ student.Total_score }}</td>
                 <td>
-                    <a class="btn btn-warning" href="{{url_for ('updateSrudent',id=student.id)}}" role="button">修改</a>
+                    <a class="btn btn-warning" href="#" role="button">修改</a>
                     &nbsp;&nbsp;
-                    <a class="btn btn-danger" href="{{url_for ('deleteSrudent',id=student.id)}}" role="button">删除</a>
+                    <a class="btn btn-danger" href="#" role="button">删除</a>
                 </td>
             </tr>
         {% endfor %}
@@ -76,6 +81,9 @@
     </tbody>
 </table>
 </div>
+
+<a class="btn btn-success home" href="{{ url_for ('index') }}" role="button">返回首页</a>
+
 
 </body>
 </html>
