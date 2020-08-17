@@ -1,6 +1,17 @@
 # SQL
 - CREATE DATABASE sims_db CHARACTER SET utf8;
 
+-studentstudentstudentCREATE TABLE `student` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `English` int NOT NULL,
+  `Python` int NOT NULL,
+  `C` int NOT NULL,
+  `Total_score` int NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+SELECT * FROM agent.user;
+
 
 INSERT INTO `sims_db`.`student` (`id`, `name`, `English`, `Python`, `C`, `Total_score`) VALUES ('1', 'zhangsan', '100', '100', '100', '300');
 INSERT INTO `sims_db`.`student` (`id`, `name`, `English`, `Python`, `C`, `Total_score`) VALUES ('2', 'xiaoming', '99', '99', '99', '297');
