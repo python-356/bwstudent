@@ -1,8 +1,11 @@
-# SIMS_Project 
-## 项目搭建
- - 链接mysql数据库
- - 编写学生模型类
- - 迁移模型类
- - 上传git仓库
+# SQL
+- CREATE DATABASE sims_db CHARACTER SET utf8;
+INSERT INTO `sims_db`.`student` (`id`, `name`, `English`, `Python`, `C`, `Total_score`) VALUES ('1', 'zhangsan', '100', '100', '100', '300');
+INSERT INTO `sims_db`.`student` (`id`, `name`, `English`, `Python`, `C`, `Total_score`) VALUES ('2', 'xiaoming', '99', '99', '99', '297');
+INSERT INTO `sims_db`.`student` (`id`, `name`, `English`, `Python`, `C`, `Total_score`) VALUES ('3', 'xiaoliang', '60', '60', '60', '180');
+INSERT INTO `sims_db`.`student` (`id`, `name`, `English`, `Python`, `C`, `Total_score`) VALUES ('4', 'lisi', '100', '100', '100', '300');
+INSERT INTO `sims_db`.`student` (`id`, `name`, `English`, `Python`, `C`, `Total_score`) VALUES ('5', 'wangwu', '60', '60', '60', '180');
+INSERT INTO `sims_db`.`student` (`id`, `name`, `English`, `Python`, `C`, `Total_score`) VALUES ('6', 'xiaoliu', '50', '50', '50', '50');
+INSERT INTO `sims_db`.`student` (`id`, `name`, `English`, `Python`, `C`, `Total_score`) VALUES ('7', 'zhouqi', '70', '70', '70', '210');
 
 
